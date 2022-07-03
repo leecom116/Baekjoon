@@ -18,7 +18,7 @@ public class Main {
         }
     }
 
-    // 양의 정수 n에 대해서 d(n)을 n과 n의 각 자리수를 더하는 함수
+    // 양의 정수 num에 대해서 d(num)을 num과 num의 각 자리수를 더하는 함수
     public static int d(int num) {
         int sum = num;
         while(num !=0) {
