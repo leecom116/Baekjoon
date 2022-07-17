@@ -18,7 +18,9 @@ public class Main {
         for(int i=1; i<15; i++) {
             for(int j=2; j<15; j++) {
             // arr[1][2] 부터 숫자를 저장
-             arr[i][j] = arr[i][j-1] + arr[i-1][j]; // ex) arr[1][2](==3) = arr[1][1](==1) + arr[0][2](==2)
+                
+            arr[i][j] = arr[i][j-1] + arr[i-1][j]; 
+            // ex) arr[1][2](==3) = arr[1][1](==1) + arr[0][2](==2)
 
             }
         }
