@@ -9,15 +9,16 @@ public class Main {
         int sum = 0, temp = 0;
 
 
-
-        for(int i=1; i<input; i++) {
+        // 브루트포스 알고리즘
+        for(int i=1; i<input; i++) { // 입력한 만큼 반복
 
             temp = i;
             sum = temp;
 
             for(int j=i; j>0;) {
 
-                sum += (j % 10);
+            // 각 자릿수의 합을 구한다.
+                sum += (j % 10); 
                 j /= 10;
 
             }
@@ -25,11 +26,11 @@ public class Main {
 
             if(sum == input) {
                 System.out.println(temp);
-                System.exit(0);
+                System.exit(0); // 프로그램 정상 종료
             }
         }
 
-        System.out.println(0);
+        System.out.println(0); // 생성자가 없을 경우, 0을 
 
     }
 }
