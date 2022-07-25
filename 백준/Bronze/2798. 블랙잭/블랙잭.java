@@ -6,10 +6,10 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();
-        int M = sc.nextInt();
+        int N = sc.nextInt(); // 카드의 개수
+        int M = sc.nextInt(); // 카드에 쓰여 있는 수
         int sum = 0, max = 0;
-        int arr[] = new int[N];
+        int arr[] = new int[N]; // N개의 길이를 가진 배열 생성
 
         for(int i=0; i<N; i++) {
             arr[i] = sc.nextInt();
