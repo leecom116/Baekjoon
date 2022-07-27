@@ -7,12 +7,7 @@ public class Main {
         // 최대 공약수와 최소 공배수 출력하는 프로그램
 
         int a = sc.nextInt(), b = sc.nextInt();
-        int i;
-        if(a > b) {
-            i = b;
-        } else {
-            i = a;
-        }
+        int i = a < b ? a : b;
 
         while(i > 0) {
             if(a % i == 0 && b % i == 0) {
