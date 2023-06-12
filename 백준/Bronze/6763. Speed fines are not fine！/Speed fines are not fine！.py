@@ -1,0 +1,11 @@
+li = int(input())
+sp = int(input())
+d = sp - li
+if d <= 0:
+    print("Congratulations, you are within the speed limit!")
+elif d >= 1 and d <= 20:
+    print("You are speeding and your fine is ${}.".format(100))
+elif d >= 21 and d <= 30:
+    print("You are speeding and your fine is ${}.".format(270))
+elif d >= 31:
+    print("You are speeding and your fine is ${}.".format(500))
